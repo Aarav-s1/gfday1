@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💖 Happy Girlfriend's Day DV BIWI! 💖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+            color: #5a2a2a;
+            min-height: 100vh;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 5rem;
+            color: #d32f2f;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+            margin-bottom: 10px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            color: #7b1fa2;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .heart-divider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        
+        .heart-divider span {
+            font-size: 2rem;
+            margin: 0 10px;
+            color: #e91e63;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0); }
+        }
+        
+        .content-section {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .content-section::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom right,
+                transparent,
+                transparent,
+                rgba(255, 107, 158, 0.1),
+                transparent,
+                rgba(199, 121, 242, 0.1)
+            );
+            transform: rotate(30deg);
+            animation: shine 8s linear infinite;
+            z-index: 0;
+        }
+        
+        @keyframes shine {
+            0% { transform: translateX(-100%) rotate(30deg); }
+            100% { transform: translateX(100%) rotate(30deg); }
+        }
+        
+        .content-section > * {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .message {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .love-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .love-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            color: #e91e63;
+            animation: pulse 2s infinite;
+        }
+        
+        .card-title {
+            font-size: 1.8rem;
+            color: #7b1fa2;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .card-text {
+            font-size: 1.1rem;
+            color: #5a2a2a;
+        }
+        
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        
+        .love-button {
+            background: linear-gradient(45deg, #e91e63, #9c27b0);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.3rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .love-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(233, 30, 99, 0.6);
+        }
+        
+        .love-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.3),
+                transparent
+            );
+            transition: 0.5s;
+        }
+        
+        .love-button:hover::before {
+            left: 100%;
+        }
+        
+        .floating-hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .heart {
+            position: absolute;
+            font-size: 20px;
+            color: #e91e63;
+            animation: float-heart 6s linear infinite;
+            opacity: 0;
+        }
+        
+        @keyframes float-heart {
+            0% {
+                transform: translateY(100vh) scale(0.5);
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-20vh) scale(1);
+                opacity: 0;
+            }
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #7b1fa2;
+            font-size: 1.2rem;
+        }
+        
+        .secret-message {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s ease;
+        }
+        
+        .secret-message.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        
+        .secret-content {
+            background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 0 50px rgba(233, 30, 99, 0.5);
+        }
+        
+        .secret-content h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            color: #d32f2f;
+            margin-bottom: 20px;
+        }
+        
+        .secret-text {
+            font-size: 1.4rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: #5a2a2a;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #d32f2f;
+            transition: transform 0.3s;
+        }
+        
+        .close-btn:hover {
+            transform: scale(1.2);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            .secret-content {
+                padding: 30px 20px;
+            }
+            
+            .secret-content h2 {
+                font-size: 2.5rem;
+            }
+            
+            .secret-text {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-hearts" id="hearts-container"></div>
+    
+    <div class="container">
+        <header>
+            <h1>Happy Girlfriend's Day!</h1>
+            <p class="subtitle">To the most amazing person in my life avni ji, dv biwi- you make every moment magical ✨</p>
+        </header>
+        
+        <div class="heart-divider">
+            <span>❤️</span>
+            <span>💖</span>
+            <span>💗</span>
+        </div>
+        
+        <div class="content-section">
+            <p class="message">
+                On this special day, I want you to know how much you mean to me. Your smile brightens my world, your laughter is my favorite melody, and your love is the greatest gift I've ever received.
+            </p>
+            
+            <div class="gallery">
+                <div class="love-card">
+                    <div class="card-icon">💖</div>
+                    <h3 class="card-title">My Best Friend</h3>
+                    <p class="card-text">You're not just my girlfriend, you're my confidant, my partner in crime, and my favorite person to share life with.</p>
+                </div>
+                
+                <div class="love-card">
+                    <div class="card-icon">🌟</div>
+                    <h3 class="card-title">My Inspiration</h3>
+                    <p class="card-text">Your strength, kindness, and passion inspire me to be a better person every single day.</p>
+                </div>
+                
+                <div class="love-card">
+                    <div class="card-icon">🌹</div>
+                    <h3 class="card-title">My Forever Love</h3>
+                    <p class="card-text">I cherish every moment with you and look forward to creating countless more beautiful memories together.</p>
+                </div>
+            </div>
+            
+            <div class="button-container">
+                <button class="love-button" id="surpriseBtn">Click for a Special Message</button>
+            </div>
+        </div>
+        
+        <footer>
+            Made with ❤️ for the most wonderful girlfriend in the world
+        </footer>
+    </div>
+    
+    <div class="secret-message" id="secretMessage">
+        <div class="secret-content">
+            <span class="close-btn" id="closeBtn">×</span>
+            <h2>To My Love</h2>
+            <p class="secret-text">
+                Every day with you feels like a beautiful adventure. Thank you for your love, your patience, and for being you. I feel incredibly lucky to have you in my life, and I promise to cherish and adore you always. You're my everything. 💖
+            </p>
+            <div class="heart-divider">
+                <span>💑</span>
+                <span>💞</span>
+                <span>💓</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Create floating hearts
+        function createHearts() {
+            const container = document.getElementById('hearts-container');
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 4 + 3 + 's';
+            heart.style.fontSize = Math.random() * 20 + 15 + 'px';
+            container.appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, 6000);
+        }
+        
+        // Create initial hearts
+        for (let i = 0; i < 20; i++) {
+            setTimeout(() => {
+                createHearts();
+            }, i * 300);
+        }
+        
+        // Continue creating hearts
+        setInterval(createHearts, 500);
+        
+        // Surprise button functionality
+        const surpriseBtn = document.getElementById('surpriseBtn');
+        const secretMessage = document.getElementById('secretMessage');
+        const closeBtn = document.getElementById('closeBtn');
+        
+        surpriseBtn.addEventListener('click', () => {
+            secretMessage.classList.add('active');
+            // Create extra hearts for celebration
+            for (let i = 0; i < 30; i++) {
+                setTimeout(() => {
+                    createHearts();
+                }, i * 100);
+            }
+        });
+        
+        closeBtn.addEventListener('click', () => {
+            secretMessage.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
